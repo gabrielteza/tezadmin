@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./user.css";
 import {
   CalendarToday,
@@ -13,7 +14,9 @@ export default function User() {
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
+        <Link to="/newuser">
         <button className="userButton">Create</button>
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
@@ -105,9 +108,12 @@ export default function User() {
                   src="https://images.generated.photos/zmnZ4nYsYFCmt3lG4gVbjt2QJzFOwmTF0ie_7x8CsO8/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjUyMjAxLmpwZw.jpg"
                   alt=""
                 />
-                <label htmlFor="file"><Publish/></label>
-                <input type="file" id="file" style={{display:"none"}}/>
+                <label htmlFor="file">
+                  <Publish className="userUpdateIcon"/>
+                </label>
+                <input type="file" id="file" style={{ display: "none" }} />
               </div>
+              <button className="userUpdateButton">Update</button>
             </div>
           </form>
         </div>

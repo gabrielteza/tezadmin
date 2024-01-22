@@ -31,14 +31,19 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebarListItem.active,
 .sidebarListItem:hover {
   background-color: rgb(230, 230, 248);
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebarIcon{
     margin-right: 5px;
     font-size: 20px !important;
+    
 }

@@ -1,0 +1,23 @@
+.transactions{
+    flex: 4;
+}
+
+.transactionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transactionsTitleContainer{
+    font-size: 25px;
+    padding: 15px;
+}
+
+.transactionsTopLeft{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 11px 11px 15px 1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 11px 11px 15px 1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 11px 11px 15px 1px rgba(0,0,0,0.56);
+    flex: 1;
+}
